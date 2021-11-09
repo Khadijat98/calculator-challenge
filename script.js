@@ -36,6 +36,8 @@ equalsKey.addEventListener("click", ()  => {
   calcDisplay.innerHTML = Number(firstNum) * Number(secondNum);
  } else if (operator == "/") {
   calcDisplay.innerHTML = Number(firstNum) / Number(secondNum);
+ } else {
+   calcDisplay.innerHTML = "";
  }
 }) 
 

@@ -23,6 +23,9 @@ body {
   grid-template-rows: repeat(6, 1fr);
   border: 3px solid black;
   border-radius: 20px;
+  box-shadow: 0px 1px #8B8FE5, 1px 2px #8B8FE5, 2px 3px #8B8FE5,
+              3px 4px #8B8FE5, 4px 5px #8B8FE5, 5px 6px #8B8FE5,
+              7px 7px black ;
   background-color: #858AE3;
   padding: 20px;
   gap: 20px;
@@ -31,8 +34,8 @@ body {
   justify-content: flex-end;
   width: 100vw;
 
-@media (min-width: 550px) {
-  max-width: 500px;
+@media (min-width: 420px) {
+  max-width: 400px;
   max-height: 70vh;
 }
 }

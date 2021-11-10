@@ -61,7 +61,10 @@ equalsKey.addEventListener("click", ()  => {
   calcDisplay.innerHTML = parseFloat(firstNum) * parseFloat(secondNum);
  } else if (operator == "/") {
   calcDisplay.innerHTML = parseFloat(firstNum) / parseFloat(secondNum);
- } else { 
+ } else if (secondNum) {
+   calcDisplay.innerHTML = secondNum;
+ }
+ else { 
   calcDisplay.innerHTML = "";
  }
 }) 

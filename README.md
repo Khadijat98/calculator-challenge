@@ -4,8 +4,6 @@
 
 ## This project was created on week 3 of the _nology course. The motivation behind this project was to apply the JavaScript concepts we were learning to a real project and to build problem solving skills - a requirement for any developer.
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
-
 ## Javascript Description
 
 ### Variables
@@ -32,10 +30,9 @@
   ### Clear (AC) Function
   #### This cleared the display as well as the memory of the calculator so new calculations could be carried out without building on previous ones.
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 
-### Known Bugs and Limitations
-#### This is a very simple calculator which is limited by the fact that it can only perform an operation on two inputs at a time. This means that the calculator cannot build on previous calculations unless the equals button is clicked and further operations are then added. For example, the user must enter [7 x 2 = ], giving a solution of 14, before they can [+ 3], giving a total solution of 17. To improve upon this, it may be necessary to implement an array so the calculator can continue to iterate through the selected values, so the user can build on previous calculations without needing to press the equals sign in between each calculation.
+## Known Bugs and Limitations
+### This is a very simple calculator which is limited by the fact that it can only perform an operation on two inputs at a time. This means that the calculator cannot build on previous calculations unless the equals button is clicked and further operations are then added. For example, the user must enter [7 x 2 = ], giving a solution of 14, before they can [+ 3], giving a total solution of 17. To improve upon this, it may be necessary to implement an array so the calculator can continue to iterate through the selected values, so the user can build on previous calculations without needing to press the equals sign in between each calculation.
 
-### Summary
-#### Overall, I am very happy with what I managed to achieve with my first JavaScript project. The calculator is functional, and I am happy with the SCSS I implemented. I am looking forward to further developing my knowledge of JavaScript so I can tackle more complex projects in the future. 
+## Summary
+### Overall, I am very happy with what I managed to achieve with my first JavaScript project. The calculator is functional, and I am happy with the SCSS I implemented. I am looking forward to further developing my knowledge of JavaScript so I can tackle more complex projects in the future. 

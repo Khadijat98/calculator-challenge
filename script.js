@@ -6,6 +6,11 @@ const clearKey = document.querySelector("#clear")
 const percentageKey = document.querySelector("#percentage")
 const plusMinusKey = document.querySelector("#positive-or-negative")
 
+// variables that will be updated
+let firstNum;
+let secondNum;
+let operator;
+
 // function for the numbers and the decimal point
 numberKeys.forEach((numberKey) => {
   numberKey.addEventListener("click", (event) => {
@@ -16,12 +21,6 @@ numberKeys.forEach((numberKey) => {
     calcDisplay.innerHTML += digit;
   })
 });
-
-// variables that will be updated
-let firstNum;
-let secondNum;
-let operator;
-
 
 // function for the operators
 operatorKeys.forEach((operatorKey) => {
@@ -63,8 +62,7 @@ equalsKey.addEventListener("click", ()  => {
   calcDisplay.innerHTML = parseFloat(firstNum) / parseFloat(secondNum);
  } else if (secondNum) {
    calcDisplay.innerHTML = secondNum;
- }
- else { 
+ } else { 
   calcDisplay.innerHTML = "";
  }
 }) 

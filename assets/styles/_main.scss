@@ -21,11 +21,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 20px;
   box-shadow: 0px 1px #8B8FE5, 1px 2px #8B8FE5, 2px 3px #8B8FE5,
               3px 4px #8B8FE5, 4px 5px #8B8FE5, 5px 6px #8B8FE5,
-              7px 7px black ;
+              6px 7px #8B8FE5, 7px 8px #8B8FE5, 8px 9px #8B8FE5,
+              10px 11px black ;
   background-color: #858AE3;
   padding: 20px;
   gap: 20px;
@@ -35,7 +36,7 @@ body {
   width: 100vw;
 
 @media (min-width: 420px) {
-  max-width: 400px;
+  max-width: 380px;
   max-height: 70vh;
 }
 }
@@ -44,16 +45,23 @@ body {
   border: 2px solid black;
   border-radius: 20px;
   background-color: #BCBFF0;
-  box-shadow: 0px -1px 1px #0B0D32 inset, -1px -2px 2px #0B0D32 inset, -2px -3px 3px #0B0D32 inset, -3px -4px 4px #0B0D32 inset ;
+  box-shadow: 0px -1px 1px #1E0836 inset, -1px -2px 2px #1E0836 inset, 0px 1px 1px #1E0836 inset, 1px 2px 2px #1E0836 inset;
   grid-column: 1/5;
   margin-bottom: 10px;
+  padding: 0px 5px 2px;
   height: 100px;
   font-weight: bold;
-  text-align: center;
+  text-align: right;
   text-shadow: 0px 0px 1px #4E148C, 0px 0px 1px #4E148C, 0px 0px 1px #4E148C ;
-  vertical-align: middle;
-  line-height: 100px;
-  font-size: 22px;
+  vertical-align: bottom;
+  line-height: 150px;
+  font-size: 30px;
+}
+
+.calculator__display-screen:hover {
+  background-color: blueviolet;
+  color: #DEDFF7;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
 }
 
 #equals {

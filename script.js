@@ -5,6 +5,15 @@ const equalsKey = document.querySelector("#equals")
 const clearKey = document.querySelector("#clear")
 const percentageKey = document.querySelector("#percentage")
 const plusMinusKey = document.querySelector("#positive-or-negative")
+const calcKeys = document.querySelectorAll(".calculator__keys")
+
+
+// function for light-up display
+calcKeys.forEach((calcKey) => {
+  calcKey.addEventListener("click", () => {
+    calcDisplay.classList.add("light-display")
+  }) 
+})
 
 // variables that will be updated
 let firstNum;
@@ -60,16 +69,19 @@ equalsKey.addEventListener("click", ()  => {
   calcDisplay.innerHTML = parseFloat(firstNum) * parseFloat(secondNum);
  } else if (operator == "/") {
   calcDisplay.innerHTML = parseFloat(firstNum) / parseFloat(secondNum);
- } else if (secondNum) {
-   calcDisplay.innerHTML = secondNum;
- } else { 
-  calcDisplay.innerHTML = "";
- }
+  } 
+  else if (secondNum) {
+   calcDisplay.innerHTML = parseFloat(secondNum);
+ } 
+  else { 
+    calcDisplay.innerHTML = "";
+  }
 }) 
 
 // function for clear
 clearKey.addEventListener("click", () => {
   calcDisplay.innerHTML = "";
-  firstNum = 0;
-  secondNum = 0;
+  firstNum = "";
+  secondNum = "";
+  calcDisplay.classList.remove("light-display")
 })

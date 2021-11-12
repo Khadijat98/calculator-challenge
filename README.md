@@ -1,8 +1,9 @@
 # JavaScript Calculator
-## This is a calculator designed with HTML 5 and SCSS and made fully functional with JavaScript ES6.
 ## Made by Khadijat Oyeleye
 
-## This project was created on week 3 of the _nology course. The motivation behind this project was to apply the JavaScript concepts we were learning to a real project and to build problem solving skills - a requirement for any developer.
+### This is a calculator designed with HTML 5 and SCSS and made fully functional with JavaScript ES6.
+
+### This project was created on week 3 of the _nology course. The motivation behind this project was to apply the JavaScript concepts we were learning to a real project and to build problem solving skills - a requirement for any developer.
 
 ## Javascript Description
 
@@ -30,9 +31,11 @@
   ### Clear (AC) Function
   #### This cleared the display as well as the memory of the calculator so new calculations could be carried out without building on previous ones.
 
+  ### Light-Up Display Function
+  #### This made it so that when the user pressed any key, with the exception of AC, the display lit up.
 
 ## Known Bugs and Limitations
-### This is a very simple calculator which is limited by the fact that it can only perform an operation on two inputs at a time. This means that the calculator cannot build on previous calculations unless the equals button is clicked and further operations are then added. For example, the user must enter [7 x 2 = ], giving a solution of 14, before they can [+ 3], giving a total solution of 17. To improve upon this, it may be necessary to implement an array so the calculator can continue to iterate through the selected values, so the user can build on previous calculations without needing to press the equals sign in between each calculation.
+### This is a very simple calculator which is limited by the fact that it can only perform an operation on two inputs at a time. This means that the calculator cannot build on previous calculations unless the equals button is clicked and further operations are then added. For example, the user must enter [7 x 2 = ], giving a solution of 14, before they can [+ 3], giving a total solution of 17. To improve upon this, it may be necessary to implement an array so the calculator can continue to iterate through the selected values, so the user can build on previous calculations without needing to press the equals sign in between each calculation. There is also a bug I have not been able to fix despite numerous trial and error, where if the user does an operation, clears the calculator, then presses a digit and presses equals, the display will show "NaN". But if a digit is pressed and the equals sign is pressed after, without any operations completed and then cleared in between, as expected, the display shows the digit that was pressed. In the future, I would like to be able to pinpoint the source of this bug and fix it.
 
 ## Summary
 ### Overall, I am very happy with what I managed to achieve with my first JavaScript project. The calculator is functional, and I am happy with the SCSS I implemented. I am looking forward to further developing my knowledge of JavaScript so I can tackle more complex projects in the future. 

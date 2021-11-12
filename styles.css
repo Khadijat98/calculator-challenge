@@ -66,9 +66,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  border: 2px solid black;
+  border: 2px solid #696cac;
   border-radius: 20px;
-  box-shadow: 0px 1px #8B8FE5, 1px 2px #8B8FE5, 2px 3px #8B8FE5, 3px 4px #8B8FE5, 4px 5px #8B8FE5, 5px 6px #8B8FE5, 6px 7px #8B8FE5, 7px 8px #8B8FE5, 8px 9px #8B8FE5, 10px 11px black;
+  box-shadow: 0px 1px #8B8FE5, 1px 2px #8B8FE5, 2px 3px #8B8FE5, 3px 4px #8B8FE5, 4px 5px #8B8FE5, 5px 6px #8B8FE5, 6px 7px #8B8FE5, 7px 8px #8B8FE5, 8px 9px #8B8FE5, 10px 11px #696cac;
   background-color: #858AE3;
   padding: 20px;
   gap: 20px;
@@ -76,6 +76,8 @@ body {
   margin: 10px 20px;
   justify-content: flex-end;
   width: 100vw;
+  perspective: 50em;
+  transform: rotateY(5deg);
 }
 @media (min-width: 420px) {
   .calculator {
@@ -85,10 +87,10 @@ body {
 }
 
 .calculator__display-screen {
-  border: 2px solid black;
+  border: 1px solid #696cac;
   border-radius: 20px;
   background-color: #BCBFF0;
-  box-shadow: 0px -1px 1px #1E0836 inset, -1px -2px 2px #1E0836 inset, 0px 1px 1px #1E0836 inset, 1px 2px 2px #1E0836 inset;
+  box-shadow: 0px -1px 1px #696cac inset, -1px -2px 2px #696cac inset, 0px 1px 1px #696cac inset, 1px 2px 2px #696cac inset;
   grid-column: 1/5;
   margin-bottom: 10px;
   padding: 0px 5px 2px;
@@ -101,7 +103,7 @@ body {
   font-size: 30px;
 }
 
-.calculator__display-screen:hover {
+.calculator__display-screen.light-display {
   background-color: blueviolet;
   color: #DEDFF7;
   text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;

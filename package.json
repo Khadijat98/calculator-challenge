@@ -1,0 +1,22 @@
+{
+  "name": "calculator-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khadijat98/calculator-challenge.git"
+  },
+  "author": "Khadijat Oyeleye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khadijat98/calculator-challenge/issues"
+  },
+  "homepage": "https://github.com/Khadijat98/calculator-challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  }
+}

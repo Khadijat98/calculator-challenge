@@ -7,7 +7,6 @@ const percentageKey = document.querySelector("#percentage")
 const plusMinusKey = document.querySelector("#positive-or-negative")
 const calcKeys = document.querySelectorAll(".calculator__keys")
 
-
 // function for light-up display
 calcKeys.forEach((calcKey) => {
   calcKey.addEventListener("click", () => {
@@ -23,12 +22,15 @@ let operator;
 // function for the numbers and the decimal point
 numberKeys.forEach((numberKey) => {
   numberKey.addEventListener("click", (event) => {
-    if (calcDisplay.innerHTML==operator) {
+    if (calcDisplay.innerHTML === operator) {
       calcDisplay.innerHTML = "";
     }
     let digit = event.target.value;
+    if ((calcDisplay.innerHTML).includes(".") && digit === ".") {
+      return;
+    } 
     calcDisplay.innerHTML += digit;
-  })
+    })
 });
 
 // function for the operators
@@ -44,7 +46,7 @@ operatorKeys.forEach((operatorKey) => {
 percentageKey.addEventListener("click", () => {
   let percentageValue = calcDisplay.innerHTML;
   calcDisplay.innerHTML = percentageValue / 100;
-  if (percentageValue == false) {
+  if (percentageValue === false) {
     calcDisplay.innerHTML = "";
   }
 })
@@ -53,7 +55,7 @@ percentageKey.addEventListener("click", () => {
 plusMinusKey.addEventListener("click", () => {
   let plusMinusValue = calcDisplay.innerHTML;
   calcDisplay.innerHTML = plusMinusValue * -1;
-  if (plusMinusValue == false) {
+  if (plusMinusValue === false) {
     calcDisplay.innerHTML = "";
   }
 })
@@ -61,13 +63,13 @@ plusMinusKey.addEventListener("click", () => {
 // function for equals
 equalsKey.addEventListener("click", ()  => {
  secondNum = calcDisplay.innerHTML;
- if (operator == "+") {
+ if (operator === "+") {
   calcDisplay.innerHTML = parseFloat(firstNum) + parseFloat(secondNum);
- } else if (operator == "-") {
+ } else if (operator === "-") {
   calcDisplay.innerHTML = parseFloat(firstNum) - parseFloat(secondNum);
- } else if (operator == "x") {
+ } else if (operator === "x") {
   calcDisplay.innerHTML = parseFloat(firstNum) * parseFloat(secondNum);
- } else if (operator == "/") {
+ } else if (operator === "/") {
   calcDisplay.innerHTML = parseFloat(firstNum) / parseFloat(secondNum);
   } 
   else if (secondNum) {

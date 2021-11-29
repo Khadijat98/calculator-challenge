@@ -85,5 +85,6 @@ clearKey.addEventListener("click", () => {
   calcDisplay.innerHTML = "";
   firstNum = "";
   secondNum = "";
+  operator = "";
   calcDisplay.classList.remove("light-display")
 })
